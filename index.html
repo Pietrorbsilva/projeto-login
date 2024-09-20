@@ -18,17 +18,25 @@
             <div id="formulario">
                 <h1>Login</h1>
                 <p>Seja bem-vindo(a) ao site novamente. Faça login para acessar esta plataforma e fazer configurações.</p>
-                <form action="login.php" method="post">
-                    <label for="iemail"><span class="material-symbols-outlined">
-                        person
-                        </span>
-                    </label>
-                    <input type="email" name="email" id="iemail"> <br>
+                <form action="login.php" method="post" autocomplete="on">
+                    <div>
+                        <label for="iemail"><span class="material-symbols-outlined">
+                            person
+                            </span>
+                        </label>
+                        <input type="email" name="email" id="iemail" placeholder="Seu Email" autocomplete="email" required maxlength="30"> <br>
+                    </div>
 
-                    <label for="isenha"><span class="material-symbols-outlined">
-                        key
-                        </span></label>
-                        <input type="password" name="senha" id="isenha">
+                    <div>
+                        <label for="isenha"><span class="material-symbols-outlined">
+                            key
+                            </span></label>
+                            <input type="password" name="senha" id="isenha" placeholder="Sua Senha" autocomplete="current-password" required maxlength="20">
+                    </div>
+                    <input type="submit" value="Entrar">
+                    <a href="senhaes.html">Esqueci a Senha <span class="material-symbols-outlined">
+                        mail
+                        </span></a>
                 </form>
             </div>
         </section>
